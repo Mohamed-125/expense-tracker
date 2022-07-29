@@ -30,6 +30,7 @@ const BudgetCard = ({
           max) *
         100
       }%`;
+      coloredProgressBarRef.current.style.backgroundColor = "#4b56f7";
     } else {
       coloredProgressBarRef.current.style.backgroundColor = "red";
       coloredProgressBarRef.current.style.width = "100%";

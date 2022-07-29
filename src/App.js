@@ -102,7 +102,8 @@ const App = () => {
                         setExpenses(
                           expenses.filter(
                             (exp) =>
-                              exp.id === e.target.parentNode.parentNode.id
+                              exp.id !==
+                              Number(e.target.parentNode.parentNode.id)
                           )
                         );
                       }}
